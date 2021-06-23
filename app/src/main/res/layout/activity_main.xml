@@ -1,0 +1,122 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="find"
+            type="String" />
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/From"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From"
+            android:background="#00FFFFFF"
+            android:textSize="25sp"
+            android:inputType="textEmailAddress"
+            android:textColor="#9E000000"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/From"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="#00FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To"
+            android:inputType="textEmailAddress"
+            android:textColor="#9E000000"
+
+
+            android:textSize="25sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Cc"
+        android:layout_below="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cc"
+            android:inputType="textPersonName"
+
+            android:textColor="#9E000000"
+            android:textSize="25sp"
+            android:background="#00FFFFFF"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Bcc"
+        android:layout_below="@+id/Cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="#00FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bcc"
+            android:inputType="textPersonName"
+            android:textColor="#9E000000"
+            android:textSize="25sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Subject"
+        android:layout_below="@+id/Bcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:inputType="textPersonName"
+            android:background="#00FFFFFF"
+            android:textColor="#9E000000"
+            android:textSize="25sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/Compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compose email"
+        android:textColor="#9E000000"
+        android:background="#00FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Subject"
+        />
+    <Button
+        android:id="@+id/send"
+        android:layout_toEndOf="@+id/Compose"
+        android:layout_marginLeft="160dp"
+        android:layout_below="@+id/Subject"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/icons8_email_send_24"
+        android:layout_toRightOf="@+id/Compose" />
+
+
+
+</RelativeLayout>
+</layout>
